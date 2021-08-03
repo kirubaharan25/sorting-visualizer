@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import './Selecter.css';
 
 class Selector extends Component{
     constructor() {
@@ -17,13 +17,13 @@ class Selector extends Component{
     }
 
     onSubmit = (e) => {
-        e.preventDefault();
+        e.preventDefault(); //Prevents browser from refreshing after submit
         console.log(this.state);
     }
     
     render() {
     return (
-        <div class="selection box">
+        <div class="selection-box">
             <strong> Select a Sorting Algorithm</strong>
             <form onSubmit={this.onSubmit}>
                 <div className="radio">
