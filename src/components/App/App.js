@@ -1,4 +1,5 @@
 import './App.css';
+import sortSelector from '../Selector/sortSelector';
 
 function App() {
   return (
