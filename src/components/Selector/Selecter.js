@@ -1,17 +1,61 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 
-function Selector(){
+class Selector extends Component{
+    constructor() {
+        super();
+    
+        this.state = {
+          sort: ''
+        };
+    }
+
+    onRadioChange = (e) => {
+        this.setState({
+          sort : e.target.value
+        });
+    }
+
+    onSubmit = (e) => {
+        e.preventDefault();
+        console.log(this.state);
+    }
+    
+    render() {
     return (
         <div class="selection box">
-            <div class="Options">
-                Select a sorting algorithm:
-                <input type="button" value="bubble" name="sortAlgorithm" > Bubble Sort </input>
-                <input type="button" value="merge" > Merge Sort</input>
-                <input type="button" value="quick" > Quick Sort</input> 
-            </div>
+            <strong> Select a Sorting Algorithm</strong>
+            <form onSubmit={this.onSubmit}>
+                <div className="radio">
+                    <label>
+                        <input type="radio" value="bubble" checked={this.state.sort === "bubble"} onChange={this.onRadioChange}/>
+                        Bubble Sort
+                    </label>
+                </div>
+                <div className="radio">
+                    <label>
+                        <input type="radio" value="merge" checked={this.state.sort === "merge"} onChange={this.onRadioChange}/>
+                        Merge Sort
+                    </label>
+                </div>
+                <div className="radio">
+                    <label>
+                        <input type="radio" value="quick" checked={this.state.sort === "quick"} onChange={this.onRadioChange}/>
+                        Quick Sort
+                    </label>
+                </div>
+                <div className="radio">
+                    <label>
+                        <input type="radio" value="select" checked={this.state.sort === "select"} onChange={this.onRadioChange}/>
+                        Selection Sort
+                    </label>
+                </div>
+
+                <button type="submit">Select Sorting Algorithm</button>
+            </form>
         </div>
     );
+    }
 }
 
 export default Selector;

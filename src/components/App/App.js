@@ -4,7 +4,10 @@ import Selector from '../Selector/Selecter';
 
 function App() {
   return (
+    <div className="App">
       < Selector />
+    </div>
+      
   );
 }
 
