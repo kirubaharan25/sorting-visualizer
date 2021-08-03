@@ -1,10 +1,10 @@
+import React from 'react';
 import './App.css';
-import sortSelector from '../Selector/sortSelector';
+import Selector from '../Selector/Selecter';
 
 function App() {
   return (
-    <div className="App">
-    </div>
+      < Selector />
   );
 }
 
