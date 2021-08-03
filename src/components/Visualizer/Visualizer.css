@@ -1,7 +1,9 @@
 .visualizer-box{
-    width: 600px;
+    width: 800px;
     padding: 10px;
     border: 5px solid black;
     margin: 20px;
-    height: 400px;
+    height: 500px;
+    position: absolute;
+    right: 0;
 }
