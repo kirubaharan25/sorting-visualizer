@@ -1,7 +1,6 @@
-import React, {useContext} from "react";
 
-export default function bubbleSort() {
-    
+export default function bubbleSort(x) {
+    var array = x;
     var len = array.length;
 
     for(let i=0; i < len;i++) {
@@ -13,4 +12,5 @@ export default function bubbleSort() {
             }
         }
     }
+    return array;
 };

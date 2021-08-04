@@ -8,7 +8,6 @@ class Visualizer extends Component {
             <div className="visualizer-box">
                 Sorting Algorithm Visualizer
                 < Array />
-                <button> Run Sorting Algorithm </button>
             </div>
         )
     }
