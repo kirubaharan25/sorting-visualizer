@@ -9,13 +9,13 @@ import Array from '../Array/Array';
 
 function runAlgorithm() {
   var result = [];
-  if(Selector.sort==="bubble") {
-    result = bubbleSort(Array.array);
+  if(Selector.state.sort==="bubble") {
+    result = bubbleSort(Array.state.array);
     
   }
 
   if(Selector.state.sort) {
-    result = selectionSort(Array.array);
+    result = selectionSort(Array.state.array);
   }
   console.log(result);
 }
