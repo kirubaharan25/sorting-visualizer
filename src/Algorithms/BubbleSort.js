@@ -1,7 +1,9 @@
+import React, {useContext} from "react";
+import UserContext from "../components/User/User";
 
-
+const Values = useContext(UserContext)
 export default function bubbleSort() {
-    var array = [2,3,4];
+    array = Values.array;
     var len = array.length;
 
     for(let i=0; i < len;i++) {
