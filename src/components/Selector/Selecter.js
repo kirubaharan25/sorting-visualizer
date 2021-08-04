@@ -23,7 +23,7 @@ class Selector extends Component{
     
     render() {
     return (
-        <div class="selection-box">
+        <div className="selection-box">
             <strong> Select a Sorting Algorithm</strong>
             <form onSubmit={this.onSubmit}>
                 <div className="radio">
