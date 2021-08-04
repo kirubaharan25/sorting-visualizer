@@ -11,6 +11,7 @@ class Array extends Component {
 
     }
 
+    /// Inefficient Randomiser
     randomise = () => {
         this.setState({array : []})
         
